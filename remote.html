@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>remote.knit</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bn-d1.css" type="text/css" />
+    <link rel="stylesheet" href="css/bn-fonts-d1.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+background-image: url(fig/chels/leaf.jpg)
+background-size: cover
+class: center, middle, inverse
+
+# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Suivi des cultures intermédiaires&lt;br&gt;par télédétection&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style='font-size:35px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;Réunion D1&lt;/div&gt;
+&lt;div style='font-size:25px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;
+7/6/2022&lt;/div&gt;
+
+---
+
+background-image: url(fig/d1/inter.jpg)
+background-size: cover
+class: center, bottom, inverse
+
+# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Intérêt des cultures intermédiaires&lt;/div&gt;
+&lt;div style='font-size:35px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;Stockage du carbone, moindre érosion, limitation des transferts d'intrants...&lt;/div&gt;
+
+
+
+# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Suivi de l'adoption de ces cultures par télédétection?&lt;/div&gt;
+
+---
+
+# Les images multispectrales
+
+.pull-left[
+- Trois possibilités pour le rayonnement solaire incident:
+  - &lt;span style='color:#AC2020;'&gt;&lt;b&gt;Absorption&lt;/b&gt;&lt;/span&gt;
+  - &lt;span style='color:#537953;'&gt;&lt;b&gt;Réflexion&lt;/b&gt;&lt;/span&gt;
+  - &lt;span style='color:#004266;'&gt;&lt;b&gt;Transmission&lt;/b&gt;&lt;/span&gt; 
+
+- Pour chaque longueur d'onde, la réflectance (R) est calculé comme le ratio entre rayonnement réfléchi et incident :&lt;br&gt; 
+`$$R = \frac{\phi_r}{\phi_i}$$`
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;img src="fig/d1/rad.png" width=100%&gt;&lt;/img&gt;
+&lt;center&gt;&lt;b&gt;Dynamique du rayonnement solaire arrivant sur une feuille&lt;/b&gt;&lt;/center&gt;
+]
+
+---
+
+# Les indices de végétation
+
+.pull-left[
+- Plusieurs constellations satellites fournissent des images de réfléctance à des résolutions de 10 à 30m, comme [Landsat](https://landsat.gsfc.nasa.gov/) ou&lt;br&gt;[Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) 
+
+- Ces images peuvent être combinées dans des indices de végétation comme le *Normalized Difference Vegetation Index* (NDVI)
+`$$NDVI = \frac{R_{NIR}-R_{Red}}{R_{NIR}+R_{Red}}$$`
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;img src="fig/d1/NDVI.gif" width=100%&gt;&lt;/img&gt;
+&lt;center&gt;&lt;b&gt;Evolution du NDVI&lt;/b&gt;&lt;/center&gt;
+]
+
+---
+
+# Les indices de végétation
+
+Relation linéaire entre NDVI et couverture du sol
+
+&lt;center&gt;&lt;img src="fig/d1/Figure1.png" width=70%&gt;&lt;/img&gt;&lt;/center&gt;
+
+---
+
+# Période de suivi
+
+Date de détection choisie : entre Décembre et Janvier
+
+&lt;center&gt;&lt;img src="fig/d1/cover_crop.png" width=100%&gt;&lt;/img&gt;&lt;/center&gt;
+
+---
+
+# Contour des parcelles
+
+Limite des parcelles depuis le Registre Parcellaire Graphique
+
+&lt;center&gt;&lt;img src="fig/d1/rpg.png" width=100%&gt;&lt;/img&gt;&lt;/center&gt;
+&lt;span style="font-size: small;"&gt;**Source:** [Géoportail](https://www.geoportail.gouv.fr/)&lt;/span&gt;
+
+---
+
+background-image: url(fig/d1/colza.jpg)
+background-size: cover
+class: center, bottom, inverse
+
+# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Résultats&lt;/div&gt;
+
+---
+
+# Taux de couverture du sol hivernal
+
+Environ 40% des parcelles avec couverture du sol avant culture de printemps
+
+&lt;center&gt;&lt;img src="fig/d1/cover_map.png" width=65%&gt;&lt;/img&gt;&lt;/center&gt;
+
+
+
+---
+
+# Influence de la rotation culturale
+
+Couverture du sol plus fréquente dans les systèmes avec élevage
+
+&lt;center&gt;&lt;img src="fig/d1/species.png" width=65%&gt;&lt;/img&gt;&lt;/center&gt;
+
+---
+
+# Influence de la rotation culturale
+
+Couverture hivernale aussi grâce aux prairies temporaires (pas seulement cultures intermédiaires)
+
+&lt;center&gt;&lt;img src="fig/d1/rotation.jpg" width=95%&gt;&lt;/img&gt;&lt;/center&gt;
+
+---
+
+# Influence des facteurs pédoclimatiques
+
+Couverture du sol négativement corrélée à la teneur en argile
+
+&lt;center&gt;&lt;img src="fig/d1/Fig3_rev.png" width=75%&gt;&lt;/img&gt;&lt;/center&gt;
+
+---
+
+# Références
+
+&lt;b&gt;Influence des rotations culturales :&lt;/b&gt;&lt;br&gt;
+[Estimation of winter soil cover by vegetation before spring-sown crops for mainland France using multispectral satellite imagery](https://iopscience.iop.org/article/10.1088/1748-9326/ac007c)&lt;br&gt;
+&lt;span style="font-size: medium;"&gt;Benjamin Nowak, Gaëlle Marliac and Audrey Michaud. Environmental Research Letters (2021)&lt;/span&gt;
+
+&lt;b&gt;Influence des facteurs pédoclimatiques :&lt;/b&gt;&lt;br&gt;
+[Soil-climate factors have a greater influence on the presence of winter cover crops than regulatory constraints in France](https://link.springer.com/article/10.1007/s13593-022-00770-y)&lt;br&gt;
+&lt;span style="font-size: medium;"&gt;Benjamin Nowak, Audrey Michaud and Gaëlle Marliac. Agronomy for Sustainable Development (2022)&lt;/span&gt;
+
+&lt;b&gt;Jeu de données :&lt;/b&gt;&lt;br&gt;
+[Dataset about the adoption of winter cover crops at the municipality level for mainland France](https://github.com/BjnNowak/WinterSoilCover)&lt;br&gt;
+&lt;span style="font-size: medium;"&gt;Benjamin Nowak, Audrey Michaud and Gaëlle Marliac. Data in Brief (submitted)&lt;/span&gt;
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
