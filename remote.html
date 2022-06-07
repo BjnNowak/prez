@@ -17,17 +17,18 @@ background-image: url(fig/chels/leaf.jpg)
 background-size: cover
 class: center, middle, inverse
 
-# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Suivi des cultures intermédiaires&lt;br&gt;par télédétection&lt;/div&gt;
-&lt;br&gt;&lt;br&gt;
+# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Suivi des cultures&lt;br&gt;intermédiaires par&lt;br&gt;télédétection&lt;/div&gt;
+&lt;div style='font-size:35px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;Exemple pour la France&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;div style='font-size:35px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;Réunion D1&lt;/div&gt;
 &lt;div style='font-size:25px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;
 7/6/2022&lt;/div&gt;
 
 ---
 
-background-image: url(fig/d1/inter.jpg)
+background-image: url(fig/d1/field.jpg)
 background-size: cover
-class: center, middle, inverse
+class: center, bottom, inverse
 
 # &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Intérêt des cultures intermédiaires&lt;/div&gt;
 &lt;div style='font-size:35px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;Stockage du carbone, moindre érosion, limitation des transferts d'intrants...&lt;/div&gt;
@@ -47,7 +48,7 @@ class: center, middle, inverse
   - &lt;span style='color:#537953;'&gt;&lt;b&gt;Réflexion&lt;/b&gt;&lt;/span&gt;
   - &lt;span style='color:#004266;'&gt;&lt;b&gt;Transmission&lt;/b&gt;&lt;/span&gt; 
 
-- Pour chaque longueur d'onde, la réflectance (R) est calculé comme le ratio entre rayonnement réfléchi et incident :&lt;br&gt; 
+- Pour chaque longueur d'onde, la &lt;b&gt;réflectance&lt;/b&gt; (R) est calculé comme le ratio entre rayonnement réfléchi et incident :&lt;br&gt; 
 `$$R = \frac{\phi_r}{\phi_i}$$`
 ]
 
@@ -62,23 +63,37 @@ class: center, middle, inverse
 # Les indices de végétation
 
 .pull-left[
-- Plusieurs constellations satellites fournissent des images de réfléctance à des résolutions de 10 à 30m, comme [Landsat](https://landsat.gsfc.nasa.gov/) ou&lt;br&gt;[Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) 
+- Plusieurs constellations satellites fournissent des images de réflectance à des résolutions de 10 à 30m, comme [Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) ou&lt;br&gt;[Landsat](https://landsat.gsfc.nasa.gov/) 
 
-- Ces images peuvent être combinées dans des indices de végétation comme le *Normalized Difference Vegetation Index* (NDVI)
+- Ces images peuvent être combinées dans des indices comme le &lt;b&gt;NDVI&lt;/b&gt; &lt;span style='font-size:20px; color:dimgrey;'&gt;(Normalized Difference Vegetation Index)&lt;/span&gt; :
 `$$NDVI = \frac{R_{NIR}-R_{Red}}{R_{NIR}+R_{Red}}$$`
 ]
 
 .pull-right[
-&lt;br&gt;
 &lt;img src="fig/d1/NDVI.gif" width=100%&gt;&lt;/img&gt;
-&lt;center&gt;&lt;b&gt;Evolution du NDVI&lt;/b&gt;&lt;/center&gt;
+&lt;center&gt;&lt;b&gt;Evolution annuelle du NDVI&lt;/b&gt;&lt;/center&gt;
+&lt;div style='font-size:20px; color:dimgrey;'&gt;
+&lt;center&gt;Alternance cultures hiver/printemps&lt;br&gt;
+(sol nu en brun, culture en bleu)&lt;/center&gt;
+&lt;/div&gt;
 ]
+
 
 ---
 
-# Les indices de végétation
+background-image: url(fig/d1/inter.jpg)
+background-size: cover
+class: center, bottom, inverse
 
-Relation linéaire entre NDVI et couverture du sol
+# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Application au&lt;br&gt;suivi des cultures&lt;br&gt;intermédiaires&lt;/div&gt;
+
+
+---
+
+# Estimation du taux de couverture du sol
+
+&lt;center&gt;&lt;b&gt;Relation linéaire entre NDVI et couverture du sol&lt;/b&gt;&lt;br&gt;
+&lt;span style="font-size: 20px;color:dimgrey;"&gt;NDVI entre 0.45 et 0.59 pour 50% de couverture du sol&lt;/span&gt;&lt;/center&gt;
 
 &lt;center&gt;&lt;img src="fig/d1/Figure1.png" width=70%&gt;&lt;/img&gt;&lt;/center&gt;
 
@@ -86,7 +101,7 @@ Relation linéaire entre NDVI et couverture du sol
 
 # Période de suivi
 
-Date de détection choisie : entre Décembre et Janvier
+&lt;b&gt;Date de détection choisie :&lt;/b&gt; entre Décembre et Janvier
 
 &lt;center&gt;&lt;img src="fig/d1/cover_crop.jpg" width=100%&gt;&lt;/img&gt;&lt;/center&gt;
 
@@ -94,7 +109,8 @@ Date de détection choisie : entre Décembre et Janvier
 
 # Contour des parcelles
 
-Limite des parcelles depuis le Registre Parcellaire Graphique
+**Limite des parcelles depuis le [Registre Parcellaire Graphique](https://www.data.gouv.fr/fr/datasets/registre-parcellaire-graphique-rpg-contours-des-parcelles-et-ilots-culturaux-et-leur-groupe-de-cultures-majoritaire/)**&lt;br&gt;
+&lt;span style="font-size: 20px;color:dimgrey;"&gt;Filtre sur les cultures de printemps uniquement&lt;/span&gt;
 
 &lt;center&gt;&lt;img src="fig/d1/rpg.jpg" width=100%&gt;&lt;/img&gt;&lt;/center&gt;
 &lt;span style="font-size: small;"&gt;**Source:** [Géoportail](https://www.geoportail.gouv.fr/)&lt;/span&gt;
@@ -110,26 +126,26 @@ class: center, bottom, inverse
 ---
 
 # Taux de couverture du sol hivernal
-
-Environ 40% des parcelles avec couverture du sol avant culture de printemps
-
+&lt;div style= "background-color: #f4a261; padding: 10px 10px 10px 10px;box-shadow: 2px 2px 4px #000000;"&gt;
+&lt;center&gt;Environ &lt;b&gt;40% des parcelles&lt;/b&gt; avec couverture du sol hivernale avant culture de printemps, avec une &lt;b&gt;forte hétérogénéité&lt;/b&gt; spatiale&lt;/center&gt;
+&lt;/div&gt;
+&lt;br&gt;
 &lt;center&gt;&lt;img src="fig/d1/cover_map.png" width=65%&gt;&lt;/img&gt;&lt;/center&gt;
 
 
 
 ---
 
-# Influence de la rotation culturale
-
-Couverture du sol plus fréquente dans les systèmes avec élevage
-
-&lt;center&gt;&lt;img src="fig/d1/species.jpg" width=65%&gt;&lt;/img&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src="fig/d1/CoverFrance_V4.gif" width=85%&gt;&lt;/img&gt;&lt;/center&gt;
 
 ---
 
 # Influence de la rotation culturale
 
-Couverture hivernale aussi grâce aux prairies temporaires (pas seulement cultures intermédiaires)
+&lt;div style= "background-color: #f4a261; padding: 10px 10px 10px 10px;box-shadow: 2px 2px 4px #000000;"&gt;
+&lt;center&gt;Couverture du sol plus fréquente dans les &lt;b&gt;systèmes d'élevage&lt;/b&gt;, notamment grâce aux &lt;b&gt;prairies temporaires&lt;/b&gt; comme précédent&lt;/center&gt;
+&lt;/div&gt;
+&lt;br&gt;
 
 &lt;center&gt;&lt;img src="fig/d1/rotation.jpg" width=95%&gt;&lt;/img&gt;&lt;/center&gt;
 
@@ -137,9 +153,32 @@ Couverture hivernale aussi grâce aux prairies temporaires (pas seulement cultur
 
 # Influence des facteurs pédoclimatiques
 
-Couverture du sol négativement corrélée à la teneur en argile
+&lt;div style= "background-color: #f4a261; padding: 10px 10px 10px 10px;box-shadow: 2px 2px 4px #000000;"&gt;
+&lt;center&gt;Pour des rotations culturales similaires, couverture du sol &lt;b&gt;négativement corrélée&lt;/b&gt; à la &lt;b&gt;teneur en argile&lt;/b&gt;&lt;/center&gt;
+&lt;/div&gt;
+&lt;br&gt;
 
-&lt;center&gt;&lt;img src="fig/d1/Fig3_rev.png" width=75%&gt;&lt;/img&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src="fig/d1/Fig3_rev.png" width=70%&gt;&lt;/img&gt;&lt;/center&gt;
+
+
+---
+
+background-image: url(fig/d1/plantule2.jpg)
+background-size: cover
+class: center, top, inverse
+
+# &lt;div style='font-size:50px; text-align: left; text-shadow: 2px 2px 4px #000000;color:white;'&gt;Conclusions&lt;/div&gt;
+
+&lt;div style='font-size:30px; text-align: left; text-shadow: 2px 2px 4px #000000; color:white;'&gt;
+Moins d'une parcelle sur deux&lt;br&gt;avec couverture du sol hivernale&lt;br&gt;avant culture de printemps
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;A améliorer :&lt;/b&gt; Couverture du sol&lt;br&gt;hivernale dans les&lt;br&gt;systèmes céréaliers
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Un levier :&lt;/b&gt; Développer&lt;br&gt;des techniques favorisant&lt;br&gt;implantation/destruction&lt;br&gt;des couverts en sols argileux
+
+
+&lt;/div&gt;
+
 
 ---
 
@@ -147,15 +186,19 @@ Couverture du sol négativement corrélée à la teneur en argile
 
 &lt;b&gt;Influence des rotations culturales :&lt;/b&gt;&lt;br&gt;
 [Estimation of winter soil cover by vegetation before spring-sown crops for mainland France using multispectral satellite imagery](https://iopscience.iop.org/article/10.1088/1748-9326/ac007c)&lt;br&gt;
-&lt;span style="font-size: medium;"&gt;Benjamin Nowak, Gaëlle Marliac and Audrey Michaud. Environmental Research Letters (2021)&lt;/span&gt;
+&lt;span style="font-size: medium;color:dimgrey;"&gt;Benjamin Nowak, Gaëlle Marliac and Audrey Michaud. Environmental Research Letters (2021)&lt;/span&gt;
+
+&lt;hr/&gt;
 
 &lt;b&gt;Influence des facteurs pédoclimatiques :&lt;/b&gt;&lt;br&gt;
 [Soil-climate factors have a greater influence on the presence of winter cover crops than regulatory constraints in France](https://link.springer.com/article/10.1007/s13593-022-00770-y)&lt;br&gt;
-&lt;span style="font-size: medium;"&gt;Benjamin Nowak, Audrey Michaud and Gaëlle Marliac. Agronomy for Sustainable Development (2022)&lt;/span&gt;
+&lt;span style="font-size: medium;color:dimgrey;"&gt;Benjamin Nowak, Audrey Michaud and Gaëlle Marliac. Agronomy for Sustainable Development (2022)&lt;/span&gt;
+
+&lt;hr/&gt;
 
 &lt;b&gt;Jeu de données :&lt;/b&gt;&lt;br&gt;
 [Dataset about the adoption of winter cover crops at the municipality level for mainland France](https://github.com/BjnNowak/WinterSoilCover)&lt;br&gt;
-&lt;span style="font-size: medium;"&gt;Benjamin Nowak, Audrey Michaud and Gaëlle Marliac. Data in Brief (submitted)&lt;/span&gt;
+&lt;span style="font-size: medium;color:dimgrey;"&gt;Benjamin Nowak, Audrey Michaud and Gaëlle Marliac. Data in Brief (submitted)&lt;/span&gt;
 
 
     </textarea>
